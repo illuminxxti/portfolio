@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*,*:before, *:after {
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+}
+body{
+  min-width: 1163px;
+}
+:root{
+    --font:'Righteous', cursive;
+    --weight:300;
+}
+.wrapper{
+    width: 100%;
+    height: fit-content;
+}
+.container{
+    background: black;
+    width: 1349px;
+    height: 100vh;
+}
+.top-div{
+    height: 4rem;
+    width: 1349px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(10,134.9px);
+    grid-template-rows: 4rem;
+    align-items: center;
+}
+.image{
+    height: fit-content;
+    width: fit-content;
+    justify-self: center;
+    align-self: center;
+    grid-column: 1/3;
+    margin-top: 1.5rem;
+}
+.image h1{
+    width: 11rem;
+    height: 4.3rem;
+    color: white;
+    font-family: 'Secular One', sans-serif;
+    letter-spacing: 2px;
+}
+#stext{
+    color:#ff5e00;
+}
+
+.top-list{
+    grid-column: 3/9;
+    justify-self:center ;
+  
+}
+.top-list ul{
+    list-style-type: none;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;  
+}
+.top-list ul li{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.top-list ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Mitr', sans-serif;
+}
+.top-btn{
+    grid-column: 9/11;
+    justify-self: center;
+}
+.top-list ul li a:hover{
+    border-bottom: 2px solid red;
+}
+.Subscribe{
+    width: 12rem;
+    height: 2.4rem;
+    border:1px solid white;
+    background-color:rebeccapurple;
+    border-radius: 25px;
+    color: white;
+    font-family: 'Mitr', sans-serif;
+}
+.Subscribe:hover{
+    box-shadow: 0 0 10px rebeccapurple,
+    0 0 25px rebeccapurple,
+    0 0 50px rebeccapurple;
+}
+.name{
+  position: absolute;
+  left: 3rem;
+  top:30vh
+}
+.greeting-text::after{
+    content: "Hello, my name is";
+    color: rgb(255, 184, 227);
+    font-size: 1rem;
+    font-family: var(--font);
+    font-weight: var(--weight);
+    
+}
+.first-text{
+    color: white;
+    font-size: 5.8vw;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 1px;
+}
+.sec-text{
+    color:rgb(133, 78, 187);
+    font-size: 5.8vw;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 1px;
+}
+.third-text::after{
+    content: "I'am a \00A0";
+    color:white;
+    font-family: var(--font);
+    font-weight: var(--weight);
+}
+.forth-text{
+    color: #ff7b00;
+    font-size: 2rem;
+    font-family:'Roboto Mono', monospace;
+    font-weight: var(--weight);
+    letter-spacing: 2px;
+}
+.input-email{
+    width: fit-content;
+    margin: 0;
+    position: relative;
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(5,3.8em);
+}
+.input-email input:focus{
+    outline: rebeccapurple;
+    box-shadow: none;
+}
+.input{
+    padding: .7rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 30px;
+    border: 2px solid rebeccapurple;
+    width: 18rem;
+    font-family: 'Mitr', sans-serif;
+}
+.input-btn{
+   grid-column: 4/6;
+   align-self: center;
+   justify-self:right;
+}
+.input-btn input{
+    border-radius: 25px;
+    border: none;
+    background-color: rebeccapurple;
+    padding: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: 'Mitr', sans-serif;
+    color: white;
+    box-shadow: 0 0 9px black;  
+}
+.input-btn input:hover{
+    background-color: rgb(91, 42, 139);
+}
+::-webkit-input-placeholder { /* Edge */
+    font-family:'Mitr', sans-serif ;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-family: 'Mitr', sans-serif;
+  }
+  
+  ::placeholder {
+    font-family: 'Mitr', sans-serif;
+  }
+  .footer{
+    width: 1349px;
+    height:100vh;
+    background-color: rgb(15, 15, 15);
+    position: relative;
+    display: flex;
+  }
+  .footer-about{
+    position: absolute;
+    right: 10rem;
+    top: 24%;
+    color: white;
+    width: 24rem;
+    height: 21rem;
+  }
+  .footer-btn{
+    position: absolute;
+    bottom:0;
+  }
+  .footer-about button{
+    width: 7rem;
+    height: 2.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  #btn1{
+    background: transparent;
+    color: #ff5e00;
+    border:2px solid #ff5e00;
+    font-family: 'Mitr',sans-serif;
+  }
+  #btn1:hover{
+    color:white;
+    background-color: #ff5e00;
+  }
+  #btn2{
+    background-color: #ff5e00;
+    border: 2px solid #ff5e00;
+    color: white;
+    font-family: 'Mitr',sans-serif;
+  }
+  #btn2:hover{
+    color:#ff5e00;
+    background: transparent;
+  }
+  .footer-about h2{
+    font-size: 3rem;
+    font-family: 'Kanit', sans-serif;
+  }
+  .footer-about h4{
+    font-size: 1.5rem;
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 2px;
+  }
+  .sixth-text,.ampersand{
+    color:rgb(173, 97, 248);
+  }
+  .footer-about p{
+    color: rgb(245, 167, 214);
+    font-family: 'Mitr',sans-serif;
+  }
+  .circle{
+    position: absolute;
+   width: fit-content;
+   height: fit-content;
+   top:17%;
+   left: -3rem;
+  }
+#outline {
+    stroke-dasharray: 2.427766571px, 242.7766571045px;
+    stroke-dashoffset: 0;
+    animation: anim 4s linear infinite,
+    color 3s linear infinite;
+}
+@keyframes anim {
+    12.5% {
+        stroke-dasharray: 33.9887319946px, 242.7766571045px;
+        stroke-dashoffset: -26.7054322815px;
+   }
+    43.75% {
+        stroke-dasharray: 84.9718299866px, 242.7766571045px;
+        stroke-dashoffset: -84.9718299866px;
+   }
+    100% {
+        stroke-dasharray: 2.427766571px, 242.7766571045px;
+        stroke-dashoffset: -240.3488905334px;
+   }
+}
+@keyframes color{
+     0%{
+        stroke: #d2305c;
+    }
+    25%{
+        stroke: #ff5e00;
+    }
+    50%{
+        stroke: #ffeb00;
+    }
+    75%{
+        stroke: #1cff00;
+    }
+    100%{
+        stroke:#00b9ff ;
+    } 
+}
+.flip{
+    height: 100vh;
+    width: 1349px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.flip-menu{
+    margin-top: 16%;
+    position: absolute;
+    width: max-content;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+}
+#known h1{
+    color: white;
+    font-family: 'Righteous';
+    margin-top: 14%;
+    letter-spacing: 2px;
+    font-size: 3rem;
+}
+.flip-card{
+    background-color: transparent;
+    width: 250px;
+    height: 300px;
+    perspective: 100rem;
+    border-radius: 13px;
+  }
+  
+  .flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    /* box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.24); */
+    border-radius: 13px;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 13px;
+    border: 2px solid rgb(129, 65, 194);
+  }
+  
+  .flip-card-front {
+    background-color: rgb(20, 20, 20);
+    color: white;
+  }
+  
+  .flip-card-back {
+    background-color: rgb(212, 205, 205);
+    color: white;
+    transform: rotateY(180deg);
+  }
+ .flip-card-front h4{
+    margin-top: 15%;
+    font-size: 1.4rem;
+    font-family: 'Mitr',sans-serif;
+    letter-spacing: 2px;
+ }
+ .flip-card-front div{
+    width: 13.3rem;
+    margin-inline:auto ;
+ }
+ .flip-card-front p{
+    font-size: 15px;
+    margin-top: 9%;
+    font-family: "Mitr",sans-serif;
+    color: rgb(241, 182, 237);
+    text-align: justify;
+ }
+ .flip-card-back div{
+    width: 13.2em;
+    margin-inline: auto;
+    margin-top: 7%;
+ }
+ .flip-card-back div p{
+    color: black;
+    font-family: 'Mitr',sans-serif;
+    font-size: 14px;
+ }
+ #flip-btn button{
+    width: 6rem;
+    height: 2.1rem;
+    border-radius: 25px;
+    background-color: rgb(207, 41, 111);
+    border:2px solid rgb(207, 41, 111);
+    color: white;
+    font-family: 'Mitr',sans-serif;
+ }
+ #flip-btn button:hover{
+    cursor: pointer;
+    background-color:transparent;
+    color: rgb(207, 41, 111);
+ }
+ .bottom{
+    width:1349px;
+    height: 25vh;
+    background-color: rgb(20, 19, 19);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(5,5vh);
+
+ }
+ #hire{
+    grid-column: 1/11;
+    grid-row: 2/4;
+    align-self: center;
+    justify-self: center;
+ }
+ .bottom div h3{
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Mitr'sans-serif;
+    color: white;
+    font-size: 1.5rem;
+ }
+ #hire-btn{
+    grid-column: 1/11;
+    grid-row: 3/6;
+    align-self: center;
+    justify-self: center;
+ }
+ #hire-btn button{
+    width: 6rem;
+    height: 2rem;
+    border-radius: 25px;
+    background-color: #d2305c;
+    font-family: 'Mitr',sans-serif;
+    color: white;
+    border:2px solid #d2305c;
+ }
+ #hire-btn button:hover{
+    background-color: transparent;
+    cursor: pointer;
+ }
+ .cube{
+    float: right;
+    width: 400px;
+    height: 400px;
+    margin-top: 7%;
+    margin-right: 9%;
+    display: flex;
+    align-content:center ;
+    justify-content: center;
+ }
+ .cube-cube{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  animation: rotate 4s linear infinite;
+ }
+ @keyframes rotate{
+  0%{
+    transform: rotateX(-30deg) rotateY(0deg);
+  }
+  100%{
+    transform: rotateX(-30deg) rotateY(360deg);
+  }
+ }
+ .cube-cube>div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+ }
+ .cube-cube div span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#151515,#c715eb);
+  transform: rotateY(calc(90deg*var(--i))) translateZ(150px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style:preserve-3d ;
+ }
+ .cube-top{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: #222;
+  transform: rotateX(90deg) translateZ(150px);
+ }
+ .cube-top::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: rgb(204, 34, 238);
+  transform: translateZ(-380px);
+  filter: blur(20px);
+  box-shadow: 0 0 120px rgba(176, 27, 206, 0.218),
+  0 0 200px rgba(176, 27, 206, 0.418),
+  0 0 300px rgba(176, 27, 206, 0.618),
+  0 0 400px rgba(176, 27, 206, 0.818),
+  0 0 500px rgba(176, 27, 206, 1);
+ }
+ 
+ .cube-cube div span h2{
+  content: 'Hire me';
+  color: rgb(255, 255, 255);
+  font-family: 'Oswald', sans-serif;
+  position: absolute;
+  text-decoration: none;
+  font-size: 4.5em;
+  transform: translateZ(50px) translateY(-20px);
+  background: transparent;
+  border: none;
+  letter-spacing: 2px;
+ }
+ .cube-cube div span h2:nth-child(1){
+  transform: translateZ(0) translateY(10px);
+  color: rgba(0,0,0,0.1);
+  filter: blur(2px);
+ }
+ /* responsive web page */
